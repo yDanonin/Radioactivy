@@ -1,7 +1,9 @@
 package radioactivity;
 
+import radioactivity.graphics.Titles;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Titles.drawGameName();
     }
 }
