@@ -1,10 +1,26 @@
 package radioactivity.entities;
 
-public class BaseCharacter {
+public abstract class BaseCharacter {
     private String name;
     private int life;
     private int damage;
-    private int velocity;
+    private int attackSpeed;
+
+    public BaseCharacter(String name, int life, int damage, int attackSpeed){
+        this.name = name;
+        this.life = life;
+        this.damage = damage;
+        this.attackSpeed = attackSpeed;
+    }
+
+    public abstract void attack(BaseCharacter target);
+
+    public void takeDamage(int damage) {
+        this.life -= damage;
+        System.out.println(this.name + " recebeu " + damage + " de dano. Vida restante: " + this.life);
+    }
+
+    public boolean isAlive(){ return life > 0; }
 
     public String getName() {
         return this.name;
@@ -18,8 +34,8 @@ public class BaseCharacter {
         return this.damage;
     }
 
-    public int getVelocity() {
-        return this.velocity;
+    public int getAttackSpeed() {
+        return this.attackSpeed;
     }
 
     public void setName(String name) {
@@ -34,9 +50,10 @@ public class BaseCharacter {
         this.damage = damage;
     }
 
-    public void setVelocity(int velocity) {
-        this.velocity = velocity;
+    public void setAttackSpeed(int attackSpeed) {
+        this.attackSpeed = attackSpeed;
     }
+
 
 
 }
