@@ -4,9 +4,9 @@ public abstract class BaseCharacter {
     private String name;
     private int life;
     private int damage;
-    private int attackSpeed;
+    private double attackSpeed;
 
-    public BaseCharacter(String name, int life, int damage, int attackSpeed){
+    public BaseCharacter(String name, int life, int damage, double attackSpeed){
         this.name = name;
         this.life = life;
         this.damage = damage;
@@ -34,7 +34,7 @@ public abstract class BaseCharacter {
         return this.damage;
     }
 
-    public int getAttackSpeed() {
+    public double getAttackSpeed() {
         return this.attackSpeed;
     }
 
@@ -50,7 +50,7 @@ public abstract class BaseCharacter {
         this.damage = damage;
     }
 
-    public void setAttackSpeed(int attackSpeed) {
+    public void setAttackSpeed(double attackSpeed) {
         this.attackSpeed = attackSpeed;
     }
 
