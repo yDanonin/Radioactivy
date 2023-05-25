@@ -86,19 +86,14 @@ public class MiddleStory {
         return """
                  Seu Abílio continua vasculhando a usina, e encontra algumas ataduras perto de uma área médica.
                                 
-                 [1] Pegar ataduras
+                 Novo item recebido
                                 
                  Ataduras
                  Ao usar: Restaura 60 de vida.
                  Espaço no inventário: 1
                  
                  Seu Abílio percebe que vasculhar a usina não vai adiantar mais nada,
-                 portanto se depara com a necessidade de tomar uma decisão novamente:
-                 
-                 [1] Ir atrás do caminhão.
-                 
-                 [2] Ir direto ao departamento de polícia.
-                 
+                 portanto se depara com a necessidade de tomar uma decisão novamente e decide ir atrás do caminhão:
                 """;
     }
     public static String playerGoToTheTruck() {
@@ -114,6 +109,17 @@ public class MiddleStory {
                                 
                 """;
     }
+
+    public static String playerAfterWinRatsNest(){
+        return """
+                Seu Abílio começa a seguir o rastro do caminhão pela cidade. 
+                Um rato gigante aparece em seu caminho, a criatura aparentava ter cerca de 2 metros,
+                era extremamente horroroso, possuía dentes enormes e uma gosma verde escorria de cavidades 
+                em seu corpo Seu Abílio não teve outra opção a não ser lutar.
+                
+                """;
+    }
+
     public static String playerGoToPoliceDepartment() {
         return """
                 Seu Abílio decide que a coisa certa a se fazer, era ir direto ao departamento de polícia,

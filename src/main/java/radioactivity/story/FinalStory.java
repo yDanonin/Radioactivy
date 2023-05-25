@@ -3,6 +3,7 @@ package radioactivity.story;
 public class FinalStory {
     public static String storyFinal() {
         return """
+                 
                  Após derrotar o Rato Gigante, seu Abílio chegou ao final do rastro do caminhão,
                  e flagrou pessoas despejando o conteúdo de barris idênticos ao que ele havia visto
                  no esgoto da cidade. Não pensou duas vezes, tirou seu celular do bolso e tirou algumas
